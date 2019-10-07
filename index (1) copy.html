@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+      
+      
+    <title>Which Kacey Musgraves song are you?</title>
+      
+      
+      <style>
+         
+    .navbar{
+     background-image: url(rainbow_spectrum.jpg)
+          }
+        
+    .navbar{
+    margin-left: -15px;
+    margin-right: -15px;
+         opacity: 0.8; 
+    filter:(opacity=70);
+          }
+          
+    .sticky-top{
+    position:fixed;
+    
+    width: 100%;
+        }
+          
+    #heading{
+    font-family: quicksand, sans-serif; 
+        
+          }
+          
+     
+          
+    body {
+    background-color: #186aa4;
+    font-family:  quicksand, sans-serif;
+    font-weight: bold;
+    background-image: url(background.jpg);
+    background-size: 100%;
+        
+ 
+          }
+    #form1{
+    padding-left: 30px;
+            
+          }
+
+
+    label {
+    display: block;
+          }
+
+    input {
+    width: 30px;
+    margin-left: 20px;
+          }
+
+
+
+    button {
+    width: 100px;
+    margin-top: 20px;
+          }
+
+    input[name=image-pick] {
+    display: none;
+    
+          }
+          
+    input:checked + label img {
+    border:3px solid #186aa4;    
+        
+}
+    </style>
+      
+      
+  </head>
+    
+    
+  <body>
+      
+      <!--navbar as heading-->
+      <div class="container-fluid" >
+       
+      <div id="navbar">
+<nav class="navbar sticky-top">
+    <div class="mx-auto" >
+  <span class="navbar-brand mb-0 h1"><h3>Which Kacey Musgraves song are you?</h3></span>
+    </div>
+    <img src="happy_sad.png" width="100" height="100" >
+</nav>
+          </div>
+      </div>
+      
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+         <div class="container">
+      <!--form1-->
+      
+         <form id="form1">
+    <p>Choose your Kacey</p>
+    <div class="container">
+        <div class ="row">
+             <div class="row align-items-center">
+            <div class="col">
+    <input name="image-pick"  value="goldenhour" type="radio" id="one">
+    <label for="one"><img src="KM_1.jpg"></label>
+                 </div> 
+            
+            
+    <div class="col">
+    <input name="image-pick" value="spacecowboy" type="radio"  id="two"  >
+    <label for="two"><img src="KM_2.jpg"></label>
+    </div>
+            </div>
+            
+            <div class="w-100"></div>
+            
+             <div class="row align-items-center">
+             <div class="col">
+    <input name="image-pick" value="happysad" type="radio" id="three">
+    <label for="three"><img src="KM_3.jpg"></label>
+            </div>
+            
+             <div class="col">
+    <input name="image-pick" value="velvetelvis"  type="radio" id="four">
+    <label for="four"><img src="KM_4.jpg"></label>
+        </div>
+        </div>
+    </div>
+        </div> 
+              
+             
+         
+             
+    
+
+         
+    <br>
+    
+     <!--form2--> 
+             
+     
+         
+    <p>How are you feeling today?</p>
+    
+<label><input type="radio" name="mood" id="happy" value="goldenhour" />Happy</label>
+<label><input type="radio" name="mood" id="sad" value="spacecowboy" />Sad</label>
+<label><input type="radio" name="mood" id="both" value="happysad" />Both</label>
+
+              
+    
+
+         
+         
+          <!--form3--> 
+            
+     
+        
+    <p>What is your favorite genre of Kacey?</p>
+    <label><input type="radio" name="fav" id="country" value="spacecowboy" />Guitar Gurl Kacey</label>
+<label><input type="radio" name="fav" id="sparkle" value="velvetelvis" />Sparkle Goddess Kacey</label>
+<label><input type="radio" name="fav" id="barbie" value="happysad" />Moschino Barbie Kacey</label>
+
+             
+
+         
+         
+          <!--form4--> 
+             
+     
+         
+        
+         <p>So, you are super moody today, what do you want to do?</p>
+<label><input type="radio" name="todo" id="onfire" value="goldenhour" />Set the world on fire</label>
+<label><input type="radio" name="todo" id="drive" value="spacecowboy" />Drive away in a Silverado</label>
+<label><input type="radio" name="todo" id="life" value="happysad" />Have the time of your life</label>
+              
+
+        
+         
+          <!--form5--> 
+             
+    
+         
+        <p>What is your sign's element?</p>
+<label><input type="radio" name="sign" id="air" value="spacecowboy" />Air</label>
+<label><input type="radio" name="sign" id="water" value="happysad" />Water</label>
+<label><input type="radio" name="sign" id="earth" value="velvetelvis" />Earth</label>
+<label><input type="radio" name="sign" id="fire" value="goldenhour" />Fire</label>
+        
+        
+                 
+    <button type="submit" value="Submit">Submit</button>
+    
+
+<p id="answer4"></p>
+  
+          </form>
+
+      </div>
+    
+       
+         
+     
+         
+
+
+
+          <script>
+ 
+    
+	document.getElementById("form1").onsubmit=function() {
+    
+    mood = document.querySelector('input[name = "mood"]:checked').value;
+       
+	  fav = document.querySelector('input[name = "fav"]:checked').value;
+	   
+	  todo = document.querySelector('input[name = "todo"]:checked').value;
+	   
+	  sign = document.querySelector('input[name = "sign"]:checked').value;
+    
+        
+	  // initialize score variables 
+	  goldenhour = 0;
+	  spacecowboy = 0;
+	  happysad = 0;
+	  velvetelvis = 0;
+      
+	  //function to calculate score for each question
+	  function eachscore(x){
+	  if(x == "goldenhour") { goldenhour = goldenhour + 1}
+	  if(x == "spacecowboy") { spacecowboy = spacecowboy + 1}
+	  if(x == "velvetelvis") { velvetelvis = velvetelvis + 1}
+      if(x == "happysad") { happysad = happysad + 1}
+	  }
+      
+	  // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
+	  
+	  //call function for each question
+	  eachscore(eval("mood"));
+	  eachscore(eval("sign"));
+	  eachscore(eval("todo"));
+	  eachscore(eval("fav"));
+	  
+	  
+	  all = [goldenhour, spacecowboy, happysad, velvetelvis];
+        
+      
+	  
+	//get the max score in the array
+	
+        
+        maxscore = Math.max.apply(Math,all);
+	
+    //figure out which score is the max score by identifying its index number
+	for(i=0; i<all.length; i++) {
+	if(all[i]==maxscore) {
+	highest = i;
+	}
+	}
+	
+
+// object holding scores and feedback	
+scores = [
+{index:0, feedback: "You got Space Cowboy", video:"https://www.youtube.com/watch?v=Kw0ih4jPOBo" },
+{index:1, feedback: "You got Velvet Elvis", video:"https://www.youtube.com/watch?v=zsOe_K3UR0M"},
+{index:2, feedback: "You got Golden Hour", video:"https://www.youtube.com/watch?v=maONL_HfI20"},
+{index:3, feedback: "You got Happy and Sad", video:"https://www.youtube.com/watch?v=U5oIvfraRrU"}
+];
+
+//loop to match index to score and reply with feedback
+for(i=0;i<scores.length; i++) {
+if(highest == scores[i].index) {
+document.getElementById("answer4").innerHTML = scores[i].feedback;
+}
+}
+
+
+
+
+		   
+	   return false; // required to not refresh the page; just leave this here
+              }// end the submit function
+	
+
+</script>
+
+      
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>                                          
+  </body>
+</html>
